@@ -6,10 +6,10 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://users.auth.gr/ngkatomer/"
 
 # Title of your site
-title = "Academic"
+title = "NTW"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -57,21 +57,21 @@ enableGitInfo = false
   font = "default"
 
   # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
+  name = "Nikolaos Katomeris"
+  role = "Electrical and Computer Engineering Student"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "Aristotle University", url = "https://www.auth.gr/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
-  telegram = ""
+  email = "ngkatomer@auth.gr"
+  address = "Thessaloniki, Greece"
+  # office_hours = "Monday 10:00 to 13:00 or email"
+  # phone = "888 888 88 88"
+  skype = "katnikos"
+  # telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
@@ -227,22 +227,18 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:test@example.org"
+    link = "mailto:ngkatomer@auth.gr"
 
   [[params.social]]
-    icon = "twitter"
+    icon = "linkedin"
     icon_pack = "fab"
-    link = "//twitter.com/GeorgeCushen"
+    link = "//www.linkedin.com/in/nicktheway/"
 
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fab"
-    link = "//github.com/gcushen"
+    link = "//github.com/nicktheway"
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -280,14 +276,9 @@ enableGitInfo = false
   weight = 4
 
 [[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
-  weight = 5
-
-[[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
