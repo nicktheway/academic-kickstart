@@ -31,7 +31,7 @@ googleAnalytics = ""
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
 hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 # Get last modified date for content from Git?
 enableGitInfo = false
@@ -62,11 +62,12 @@ enableGitInfo = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Aristotle University", url = "https://www.auth.gr/" } ]
+  organizations = [ { name = "Aristotle University", url = "https://www.auth.gr/en" } ]
 
-  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  #gravatar = true  # Get your avatar from Gravatar.com? (true/false)
+  gravatar = "true"
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "ngkatomer@auth.gr"
+  email = "nikospanwkatw96@gmail.com"
   address = "Thessaloniki, Greece"
   # office_hours = "Monday 10:00 to 13:00 or email"
   # phone = "888 888 88 88"
@@ -276,9 +277,14 @@ enableGitInfo = false
   weight = 4
 
 [[menu.main]]
+  name = "Articles"
+  url = "#articles"
+  weight = 5
+
+[[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 5
+  weight = 6
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -314,17 +320,63 @@ enableGitInfo = false
 #   Refer to https://sourcethemes.com/academic/docs/language/
 
 # Configure the English version of the website.
-[languages.en]
-  languageCode = "en-us"
-
-# Uncomment the lines below to configure your website in a second language.
-#[languages.zh]
-#  languageCode = "zh-Hans"
-#  title = "Chinese website title..."
-#  [languages.zh.params]
-#    name = "Your name in Chinese..."
-#    role = "Your role in Chinese..."
-#  [[languages.zh.menu.main]]
-#    name = "Wo"
-#    url = "#about"
-#    weight = 1
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+  [languages.el]
+    languageCode = "el"
+    languageName = "Eλληνικά"
+    contentDir = "content/el"
+    weight = 2
+    [languages.el.params]
+      name = "Nικόλαος Κατωμέρης"
+      role = "Φοιτητής του τμήματος ηλεκτρολόγων μηχανικών και μηχανικών υπολογιστών"
+      organizations = [ { name = "Aριστοτέλειο πανεπιστήμιο", url = "https://www.auth.gr/" } ]
+    [[languages.el.menu.main]]
+      url = "#about"
+      name = "Aρχική σελίδα"
+      weight = 1
+    [[languages.el.menu.main]]
+      url = "#posts"
+      name = "Δημοσιεύσεις"
+      weight = 2
+    [[languages.el.menu.main]]
+      url = "#projects"
+      name = "Εργασίες"
+      weight = 3
+    [[languages.el.menu.main]]
+      url = "#articles"
+      name = "Άρθρα"
+      weight = 4
+    [[languages.el.menu.main]]
+      url = "#contact"
+      name = "Eπικοινωνία"
+      weight = 5
+  [languages.ja]
+    languageCode = "ja"
+    languageName = "日本語"
+    contentDir = "content/jp"
+    weight = 2
+    [languages.ja.params]
+      name = "カトメリスニコス"
+      role = "大学生"
+      organizations = [ { name = "アリストテレス大学", url = "https://www.auth.gr/en" } ]
+    [[languages.ja.menu.main]]
+      url = "#about"
+      name = "スタート"
+      weight = 1
+    [[languages.ja.menu.main]]
+      url = "#posts"
+      name = "投稿"
+      weight = 2
+    [[languages.ja.menu.main]]
+      url = "#projects"
+      name = "プロジェクト"
+      weight = 3
+    [[languages.ja.menu.main]]
+      url = "#contact"
+      name = " コンタクト"
+      weight = 4

@@ -1,7 +1,7 @@
 +++
 # Hero Carousel widget.
 widget = "hero_carousel"
-active = false
+active = true
 date = 2017-10-15T00:00:00
 
 # Order that this section will appear in.
@@ -18,8 +18,8 @@ height = "300px"
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "Hello"
-  content = "I am center aligned :smile:"
+  title = "Γειά!"
+  content = "Είμαι στοιχισμένο στον κέντρο :smile:"
   align = "center"  # Choose `center`, `left`, or `right`.
 
   # Overlay a color or image (optional).
@@ -31,14 +31,14 @@ height = "300px"
   # Call to action button (optional).
   #   Activate the button by specifying a URL and button label below.
   #   Deactivate by commenting out parameters, prefixing lines with `#`.
-  cta_label = "Get Academic"
-  cta_url = "https://sourcethemes.com/academic/"
-  cta_icon_pack = "fa"
-  cta_icon = "graduation-cap"
+  #cta_label = "Get Academic"
+  #cta_url = "https://sourcethemes.com/academic/"
+  #cta_icon_pack = "fa"
+  #cta_icon = "graduation-cap"
 
 [[item]]
   title = "Left"
-  content = "I am left aligned :smile:"
+  content = "Είμαι αριστερά στοιχισμένο :smile:"
   align = "left"
 
   overlay_color = "#555"  # An HTML color value.
@@ -47,7 +47,7 @@ height = "300px"
 
 [[item]]
   title = "Right"
-  content = "I am right aligned :smile:"
+  content = "Είμαι δεξιά στοιχισμένο :smile:"
   align = "right"
 
   overlay_color = "#333"  # An HTML color value.

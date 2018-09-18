@@ -35,6 +35,6 @@ weight = 5
 
 # Biography
 Nick is a student of electrical and computer engineering at the Aristotle University. His interests include artificial intelligence, image processing,
-game development and software engineering. Currently, he is part of the Ωmega Dimension team making the "The hidden music box" video game.
+game development and software engineering. Currently, he is part of [Ωmega Dimension](http://dimensionomega.ml/wp/) developing "The hidden music box" video game.
 
 When not working on school projects or on the video game, he takes part on programming challenges, plays the piano and learns Japanese.
