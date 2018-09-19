@@ -33,13 +33,5 @@ filter_default = 0
   name = "All"
   tag = "*"
 
-[[filter]]
-  name = "Deep Learning"
-  tag = "Deep Learning"
-
-[[filter]]
-  name = "Other"
-  tag = "Demo"
-
 +++
 
