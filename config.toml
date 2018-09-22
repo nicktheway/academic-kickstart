@@ -151,7 +151,7 @@ enableGitInfo = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
+  highlight_languages = ["go", "matlab", "lua"]
   highlight_style = "github"
 
   # Enable native social sharing buttons?
@@ -164,8 +164,8 @@ enableGitInfo = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
-  custom_js  = []
+  custom_css = ["more.css"]
+  custom_js  = ["code-tabs.js"]
 
   # Publication types.
   #   Used to categorize publications.

@@ -11,7 +11,7 @@ authors = []
 tags = ["programming"]
 summary = "The way to start learning a programming language."
 
-#highlight_languages = ["C", "C++", "C#", "java","PHP", "python"]
+#highlight_languages = ["go"]
 
 [header]
 image = "headers/hello_world.png"
@@ -30,36 +30,49 @@ torture h@ forever.
 The rumour might not be true but -just in case- lets see how "Hello world" can be printed with some of the most famous
 programming languages in order to start -safely- our learning trip.
 
-
-#### Python/Lua
-```
+{{% tabs %}}
+{{% tab Python %}}
+```python
 print("Hello world")
 ```
 
 Hmmm simple enough.
+{{% /tab %}}
 
-#### Coffeescript
+{{% tab Lua %}}
+```lua
+print("Hello world")
 ```
+
+That will work in *python* too!
+{{% /tab %}}
+
+{{% tab CoffeeScript %}}
+```javascript
 console.log "Hello world"
 ```
 That's easy.
+{{% /tab %}}
 
-#### Bash
-```
+{{% tab Bash %}}
+
+```bash
 #!/bin/bash
 echo Hello world
 ```
-Bash seems simple too :smirk:.
+Bash seems simple too {{< emoji ":smirk:">}}.
+{{% /tab %}}
 
-#### PHP
-```
+{{% tab PHP %}}
+```php
 <?php echo "Hello world";
 ```
 
 <?php What?!?.
+{{% /tab %}}
 
-#### Go
-```
+{{% tab Go %}}
+```go
 package main
 
 import "fmt"
@@ -71,12 +84,14 @@ func main()
 ```
 Ok...lets see what *fmt* stands for:
 
-1. full moon time :x:
-2. free monster trigger :x:
-3. format :o:
+1. full moon time {{< emoji ":x:">}}
+2. free monster trigger {{< emoji ":x:">}}
+3. format {{< emoji ":o:">}}
 
-#### C\#
-```
+{{% /tab %}}
+
+{{% tab "C#" %}}
+```c#
 using System;
 
 class HelloWorld
@@ -87,10 +102,11 @@ class HelloWorld
     }
 }
 ```
-A Class for this?
+A class for this.
+{{% /tab %}}
 
-#### Java
-```
+{{% tab Java %}}
+```java
 class HelloWorld
 {
     public static void main(String[] args) 
@@ -99,10 +115,11 @@ class HelloWorld
     }
 }
 ```
-Again?
+A class for this {{< emoji ":confused:">}}.
+{{% /tab %}}
 
-#### C
-```
+{{% tab C %}}
+```c
 #include <stdio.h>
 
 int main(void)
@@ -113,9 +130,10 @@ int main(void)
 }
 ```
 Good.
+{{% /tab %}}
 
-#### C++
-```
+{{% tab "C++" %}}
+```c++
 #include <iostream>
 
 int main(void)
@@ -126,29 +144,31 @@ int main(void)
 }
 ```
 Ok, I guess.
+{{% /tab %}}
 
-### Bonus
-#### Assembly
-```
-section     .text
-global      _start                              ;must be declared for linker (ld)
+{{% tab Assembly %}}
 
-_start:                                         ;tell linker entry point
+        section     .text
+        global      _start                              ;must be declared for linker (ld)
 
-    mov     edx,len                             ;message length
-    mov     ecx,msg                             ;message to write
-    mov     ebx,1                               ;file descriptor (stdout)
-    mov     eax,4                               ;system call number (sys_write)
-    int     0x80                                ;call kernel
+        _start:                                         ;tell linker entry point
 
-    mov     eax,1                               ;system call number (sys_exit)
-    int     0x80                                ;call kernel
+            mov     edx,len                             ;message length
+            mov     ecx,msg                             ;message to write
+            mov     ebx,1                               ;file descriptor (stdout)
+            mov     eax,4                               ;system call number (sys_write)
+            int     0x80                                ;call kernel
 
-section     .data
+            mov     eax,1                               ;system call number (sys_exit)
+            int     0x80                                ;call kernel
 
-msg     db  'Hello, world!',0xa                 ;our dear string
-len     equ $ - msg                             ;length of our dear string
-```
+        section     .data
+
+        msg     db  'Hello, world!',0xa                 ;our dear string
+        len     equ $ - msg                             ;length of our dear string
+
 PERFECT!
 
 [Source for the assembly code](http://asm.sourceforge.net/intro/hello.html)
+{{% /tab %}}
+{{% /tabs %}}
