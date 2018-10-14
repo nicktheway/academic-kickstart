@@ -1,8 +1,8 @@
 +++
 title = "Hello world!"
 
-date = 2016-04-20T00:00:00
-lastmod = 2018-09-18T18:00:00
+date = 2018-09-18T08:00:00
+lastmod = 2018-10-14T18:58:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -45,6 +45,14 @@ print("Hello world")
 ```
 
 That will work in *python* too!
+{{% /tab %}}
+
+{{% tab R %}}
+```r
+print("Hello world")
+```
+
+It's like *python* and *lua*!
 {{% /tab %}}
 
 {{% tab CoffeeScript %}}
