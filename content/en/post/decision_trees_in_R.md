@@ -3,7 +3,7 @@ title = "Decision trees in R"
 
 date = 2018-10-14T18:58:00
 lastmod = 2018-10-15T01:52:00
-draft = false
+draft = true
 
 authors = ["nicktheway"]
 
@@ -46,7 +46,7 @@ The GINI type for each splitted into $k$ groups characteristic ($c$) is the foll
 $$\mathit{GINI}\_c = \sum_{i=1}^{k}\frac{n_i}{n}\mathit{GINI}\_c(i)$$
 where:
 $$n_i = \text{the number of elements in group } i \\\n = \text{the number of elements in all } k \text{ groups}$$
-For each group $i$ $c$'s values can be into:
+and for each group $i$ $c$'s values can be into:
 
 $$\mathit{GINI}\_c(i) = 1 - \sum_{j}p(\mathit{outcome}\in{j}|i)^2$$
 where $j$ traverses the groups $\mathit{outcome}$'s values can take.
