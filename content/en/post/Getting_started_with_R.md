@@ -23,7 +23,7 @@ You can download and install R from the [r-project website](https://www.r-projec
 ##### GUI
 {{< figure src="/img/posts/ds_R/RStudio_interface.png" alt="RStudio interface">}}
 
-Installing a GUI IDE will make developing with R easier so lets use one. 
+Installing a GUI IDE will make developing with R easier so let's use one. 
 
 After a quick search I found that *RStudio* -which is the most commonly used one- looked like the familiar *MATLAB GUI* so 
 I downloaded it and installed it from [here](https://www.rstudio.com/products/rstudio/download/#download).
@@ -36,8 +36,8 @@ Printing "Hello world" with *R* is really easy as you can see in the [hello worl
 Just write the command in the console or in a script and execute it.
 
 ### Arrays and matrices
-After upholding the "Hello World" tradition lets move into the foundation of the things we'll do with R, which are data related.
-Our data will usually be part of vectors so lets see how to make one.
+After upholding the "Hello World" tradition let's move into the foundation of the things we'll do with R, which are data related.
+Our data will usually be part of vectors so let's see how to make one.
 
 ```r
 A = c(1, 2, 3)   # Creates a vector of <double> values and stores it to A.
@@ -102,14 +102,14 @@ plot(A$weight, A$height)
 {{< figure src="/img/posts/ds_R/RStudio_plot.png" alt="RStudio individual char. and plot">}}
 
 ### A "real" case scenario
-To finish this up, lets use the *AirPassengers* dataset that comes built in with R and try to get
+To finish this up, let's use the *AirPassengers* dataset that comes built in with R and try to get
 information we might want from it.
 
 As we can see in the documentation (```?AirPassengers```) this dataset contains
 the numbers of the international airline passengers for each month of the years 1949-1960.
 
 Knowing the above, we can make a matrix with these data putting every year on a different row
-and every month on a different column. Also, to make the matrix more readable lets put labels
+and every month on a different column. Also, to make the matrix more readable let's put labels
 on each row/column:
 
 ```r
@@ -122,7 +122,7 @@ print(flights) # Print the matrix.
 
 {{< figure src="/img/posts/ds_R/flights_table.png" alt="AirPassengers data to matrix.">}}
 
-To create a data frame from the table is simple, so lets transpose the matrix first to learn
+To create a data frame from the table is simple, so let's transpose the matrix first to learn
 how to do that to.
 ```r
 ?t # View the documentation of the t() function that transposes a matrix.
@@ -130,13 +130,15 @@ airdata = as.data.frame(t(flights))
 # the "airdata" data frame will contain the years as columns (characteristics)
 # and the months as rows (observations).
 ```
+Now, each observation will be a different month's data, and each attribute will be a year.
 
-##### Now lets for example say that we want to learn the mean of passengers that traveled in 1955 per month.
-We can just run:
+##### Now let's for example say that we want to learn the mean of passengers that traveled in 1955 per month.
+1955's data are an attribute and we have access to each attribute of the data frame with the ```$``` symbol.
+Therefore, we can just run:
 ```r
 mean(airdata$Y1955) # answer: 284
 ```
-or ```summary(airdata)``` and check the mean value for 1955 or any other year.
+or ```summary(airdata)``` and check the mean value for ```Y1955``` or any other year.
 
 ##### What if we want to know what was the max number of travelers on January and/or February?
 
